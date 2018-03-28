@@ -1,7 +1,7 @@
 # Spring Boot AMQP Producer Sample
 
 This sample project is to show how to send message via Spring Boot AMQP. Please refer to below project about how to receive message via Spring Boot AMQP.
-* [Spring Boot AMQP Producer Sample](https://github.com/zhwxp/spring-boot-amqp-consumer-sample)
+* [Spring Boot AMQP Consumer Sample](https://github.com/zhwxp/spring-boot-amqp-consumer-sample)
 
 ## Prerequisites
 
