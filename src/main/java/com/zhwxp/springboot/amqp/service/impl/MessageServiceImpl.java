@@ -26,7 +26,7 @@ public class MessageServiceImpl implements MessageService {
         Message message = new Message();
         message.setTitle("message title");
         message.setBody("message body");
-        LOGGER.info("Sending message: {}", message.toString());
+        LOGGER.info("Sending message: {}", message);
         rabbitTemplate.convertAndSend(MessageProducerConfig.EXCHANGE_NAME, MessageProducerConfig.ROUTING_KEY, message);
     }
 
