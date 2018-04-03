@@ -1,11 +1,12 @@
 package com.zhwxp.springboot.amqp.model;
 
-import java.io.Serializable;
+import java.time.LocalDateTime;
 
-public class Message implements Serializable {
+public class Message {
 
     private String title;
     private String body;
+    private LocalDateTime date;
 
     public String getTitle() {
         return title;
@@ -23,11 +24,20 @@ public class Message implements Serializable {
         this.body = body;
     }
 
+    public LocalDateTime getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDateTime date) {
+        this.date = date;
+    }
+
     @Override
     public String toString() {
         return "Message{" +
                 "title='" + title + '\'' +
                 ", body='" + body + '\'' +
+                ", date=" + date +
                 '}';
     }
 
