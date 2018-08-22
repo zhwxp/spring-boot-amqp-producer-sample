@@ -1,6 +1,6 @@
-package com.zhwxp.springboot.amqp.scheduler;
+package com.zhwxp.sample.spring.boot.amqp.producer.scheduler;
 
-import com.zhwxp.springboot.amqp.service.MessageService;
+import com.zhwxp.sample.spring.boot.amqp.producer.service.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;

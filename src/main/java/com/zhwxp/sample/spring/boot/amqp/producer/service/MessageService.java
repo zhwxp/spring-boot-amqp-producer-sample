@@ -1,4 +1,4 @@
-package com.zhwxp.springboot.amqp.service;
+package com.zhwxp.sample.spring.boot.amqp.producer.service;
 
 public interface MessageService {
 

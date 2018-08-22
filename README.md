@@ -1,6 +1,6 @@
 # Spring Boot AMQP Producer Sample
 
-This sample project is to show how to send message via Spring Boot AMQP. Please refer to below project about how to receive message via Spring Boot AMQP.
+This sample project is to show how to send message to RabbitMQ server by using Spring Boot AMQP. Please refer to below project about how to receive message from RabbitMQ server by using Spring Boot AMQP.
 * [Spring Boot AMQP Consumer Sample](https://github.com/zhwxp/spring-boot-amqp-consumer-sample)
 
 ## Prerequisites

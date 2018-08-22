@@ -1,10 +1,10 @@
-package com.zhwxp.springboot.amqp.service.impl;
+package com.zhwxp.sample.spring.boot.amqp.producer.service.impl;
 
 import java.time.LocalDateTime;
 
-import com.zhwxp.springboot.amqp.config.MessageProducerConfig;
-import com.zhwxp.springboot.amqp.model.Message;
-import com.zhwxp.springboot.amqp.service.MessageService;
+import com.zhwxp.sample.spring.boot.amqp.producer.config.MessageProducerConfig;
+import com.zhwxp.sample.spring.boot.amqp.producer.model.Message;
+import com.zhwxp.sample.spring.boot.amqp.producer.service.MessageService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -29,7 +29,7 @@ public class MessageServiceImpl implements MessageService {
         message.setTitle("message title");
         message.setBody("message body");
         message.setDate(LocalDateTime.now());
-        LOGGER.info("Sending message: {}", message);
+        LOGGER.info("Send message: {}", message);
         rabbitTemplate.convertAndSend(MessageProducerConfig.EXCHANGE_NAME, MessageProducerConfig.ROUTING_KEY, message);
     }
 
